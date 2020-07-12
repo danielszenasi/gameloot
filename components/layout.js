@@ -1,12 +1,10 @@
-import Header from '../components/header'
-import Footer from '../components/footer'
+import Header from "../components/header";
+import Footer from "../components/footer";
 
-export default ({children}) => (
+export default ({ children, games }) => (
   <>
-    <Header/>
-    <main>
-      {children}
-    </main>
-    <Footer/>
+    <Header games={games} />
+    <main>{children}</main>
+    <Footer />
   </>
-)
+);
